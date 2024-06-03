@@ -1,0 +1,33 @@
+<div class="container mt-5" *ngIf="user">
+    <article>
+      <header class="mb-4">
+        <h1 class="display-4 fw-bold text-center mb-3">{{user.name}}</h1>
+        <p class="text-muted text-center fst-italic">ID de Usuario: {{user.id}}</p>
+      </header>
+  
+      <figure class="text-center mb-4">
+        <img [src]="user.image" class="img-fluid rounded shadow-sm" style="max-width: 500px; width: 100%;" alt="Imagen del usuario">
+      </figure>
+  
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="mb-4 text-primary fw-bold">Información del Usuario</h2>
+          <p class="mb-4"><strong>Nacionalidad:</strong> {{user.nationality}}</p>
+          <p class="mb-4"><strong>Edad:</strong> {{user.age}}</p>
+          <p class="mb-4"><strong>Género:</strong> {{user.gender}}</p>
+          <h3 class="mb-3 text-primary fw-bold">Contacto</h3>
+          <p class="mb-4"><strong>Email:</strong> {{user.email}}</p>
+          <p class="mb-4"><strong>LinkedIn:</strong> {{user.linkedin}}</p>
+        </div>
+      </div>
+    </article>
+  
+    <div class="container mt-5 mb-5 pb-2">
+      <hr class="my-5">
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary btn-lg px-4 py-3 shadow" (click)="navigateToList()">
+          <i class="bi bi-arrow-left me-2"></i>Volver a la lista
+        </button>
+      </div>
+    </div>
+  </div>

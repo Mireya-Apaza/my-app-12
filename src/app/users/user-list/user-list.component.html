@@ -1,0 +1,54 @@
+<div class="container p-3">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <strong class="mb-2">Usuario {{users[0].id}}</strong>
+        <div class="row g-1 border rounded  mb-4 shadow">
+          <div class="col p-4 d-flex flex-column ">
+            <h4 class="mb-0 mt-2 fw-bold text-primary">{{users[0].name}}</h4>
+            <button class="btn btn-primary mt-4" (click)="goToDetails(users[0].id)">Ver detalles</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img [src]="users[0].image" width="130" height="150">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <strong class="mb-2">Usuario {{users1[0].id}}</strong>
+        <div class="row g-1 border rounded  mb-4 shadow">
+          <div class="col p-4 d-flex flex-column ">
+            <h4 class="mb-0 mt-2 fw-bold text-primary">{{users1[0].name}}</h4>
+            <button class="btn btn-primary mt-4" (click)="goToDetails(users1[0].id)">Ver detalles</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img [src]="users1[0].image" width="150" height="150">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <strong class="mb-2">Usuario {{users2[0].id}}</strong>
+        <div class="row g-1 border rounded  mb-4 shadow">
+          <div class="col p-4 d-flex flex-column ">
+            <h4 class="mb-0 mt-2 fw-bold text-primary">{{users2[0].name}}</h4>
+            <button class="btn btn-primary mt-4" (click)="goToDetails(users2[0].id)">Ver detalles</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img [src]="users2[0].image" width="140" height="150">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <strong class="mb-2">Usuario {{users3[0].id}}</strong>
+        <div class="row g-1 border rounded  mb-4 shadow">
+          <div class="col p-4 d-flex flex-column ">
+            <h4 class="mb-0 mt-2 fw-bold text-primary">{{users3[0].name}}</h4>
+            <button class="btn btn-primary mt-4" (click)="goToDetails(users3[0].id)">Ver detalles</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img [src]="users3[0].image" width="140" height="150">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
